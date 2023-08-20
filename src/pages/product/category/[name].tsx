@@ -14,7 +14,7 @@ export const getStaticProps: GetStaticProps<{
   products: Product[];
 }> = async ({ params }) => {
   const res = await fetch(
-    `http://localhost:3000/api/product/category/${params?.name}`
+    `${process.env.URL}/api/product/category/${params?.name}`
   );
   const data = await res.json();
 

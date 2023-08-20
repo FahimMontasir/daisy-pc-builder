@@ -3,7 +3,7 @@ import { GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
 
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:3000/api");
+  const res = await fetch(`${process.env.URL}/api`);
   const { products } = await res.json();
 
   const paths = products.map((product: Product) => ({
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 export const getStaticProps: GetStaticProps<{
   product: Product;
 }> = async ({ params }) => {
-  const res = await fetch(`http://localhost:3000/api/product/${params?.id}`);
+  const res = await fetch(`${process.env.URL}/api/product/${params?.id}`);
   const { product } = await res.json();
 
   return { props: { product } };

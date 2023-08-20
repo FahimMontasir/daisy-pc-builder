@@ -6,7 +6,7 @@ import type { InferGetStaticPropsType, GetStaticProps } from "next";
 export const getStaticProps: GetStaticProps<{
   products: Product[];
 }> = async () => {
-  const res = await fetch("http://localhost:3000/api");
+  const res = await fetch(`${process.env.URL}/api`);
   const data = await res.json();
 
   const randomIndices = getRandomIndices(data.products.length, 6);
