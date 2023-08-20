@@ -1,8 +1,8 @@
- <!-- guide -> https://github.com/Apollo-Level2-Web-Dev/L2A6-PC-Builder-Assignment -->
+ <!-- instructions -> https://github.com/Apollo-Level2-Web-Dev/L2A6-PC-Builder-Assignment -->
 
-# [PC Builder Website](link)
+# [Daisy PC builder live link](https://daisy-pc-builder.vercel.app/)
 
-Welcome to the PC Builder Website, a Next.js-based application for building
+Welcome to the Daisy PC builder, a Next.js-based application for building
 custom PCs by selecting various PC components.
 
 ## Table of Contents
@@ -24,8 +24,8 @@ custom PCs by selecting various PC components.
 1. Clone this repository to your local machine and run dev.
 
 ```bash
-git clone https://github.com/FahimMontasir/pc-builder.git
-cd pc-builder
+git clone https://github.com/FahimMontasir/daisy-pc-builder.git
+cd daisy-pc-builder
 yarn
 yarn dev
 ```
